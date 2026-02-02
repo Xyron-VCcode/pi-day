@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Pi</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(180deg, #0b0b0b, #000);
+        font-family: "Georgia", serif;
+        color: #f5e6b8;
+        padding: 60px 20px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        animation: fadeIn 1.8s ease;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        color: gold;
+        margin-bottom: 40px;
+        text-shadow: 0 0 30px rgba(255,215,0,0.6);
+    }
+
+    h2 {
+        color: #ffd700;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+
+    .pi-digits {
+        background: rgba(255, 215, 0, 0.08);
+        border-left: 4px solid gold;
+        padding: 20px;
+        margin: 20px 0;
+        font-family: "Courier New", monospace;
+        font-size: 1.1rem;
+        color: #ffd700;
+        word-wrap: break-word;
+    }
+
+    .buttons {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    button {
+        margin: 10px;
+        padding: 12px 36px;
+        font-size: 1rem;
+        background: linear-gradient(135deg, #ffd700, #ffb700);
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(255,215,0,0.6);
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(255,215,0,0.9);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>π العدد </h1>
+
+    <h2>?π ما هي قيمة</h2>
+    <p>
+   ثابت رياضي يساوي نسبة محيط الدائرة إلى قطرها، وقيمته :π   
+
+    </p>
+
+    <h2>القيمة التقريبية</h2>
+    <p>
+       : التقريبة الاكثر شيوعا هي
+    </p>
+
+    <div class="pi-digits">
+        π ≈ 3.14159265358979323846264338327950288419716939937510…
+    </div>
+
+    <h2>
+  ? مميزاً π لماذا يُعتبر العدد 
+    </h2>
+    <p>
+        هو **عدد غير نسبي**، أي أن تمثيله العشري **لا ينتهي ولا يتكرر**.
+وهو أيضًا **عدد متسامٍ (متعالٍ)**، مما يجعله **مثيرًا للاهتمام بعمق في علم الرياضيات **.
+
+    </p>
+
+    <h2 > ? π  اين يستخدم العدد   </h2>
+    <p>
+     : في كل مكان  في العلوم والهندسة بما في  ذلك π يظهر العدد 
+    </p>
+    <p>
+        الهندسة وعلم المثلثات •
+        <br> الفيزياء وعلم الفلك •
+        <br> الهندسة والعمارة  •
+        <br> علوم الحاسوب والإحصاء  •
+    </p>
+
+    <h2>πيوم </h2>
+    <p>
+       يُحتفل به في ١٤ مارس (٣/١٤)، تكريمًا لأول ثلاثة أرقام من العدد π. إنه يوم للاحتفال بالرياضيات والإبداع والفضول.
+    </p>
+
+    <div class="buttons">
+        <button onclick="goBack()">Back</button>
+    </div>
+
+</div>
+
+<script>
+    function goBack() {
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
